@@ -7,7 +7,6 @@ SCRIPT_NAME=$(basename "$0")
 MACHINE=""
 COMPONENTS=""
 DISTRO=""
-SDK_CONFIG_FILE="sdk-var.yml"
 
 validate_distro() {
     case "$DISTRO" in
