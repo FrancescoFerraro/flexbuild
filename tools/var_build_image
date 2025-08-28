@@ -157,6 +157,13 @@ parse_arguments() {
 main() {
     parse_arguments "$@"
 
+    if [ -z "${SDK_CONFIG_FILE:-}" ]; then
+        case "$MACHINE" in
+            var-som-mx6*) SDK_CONFIG_FILE="sdk-var-6.6.23.yml" ;;
+            *)            SDK_CONFIG_FILE="sdk-var.yml"  ;;
+        esac
+    fi
+
     if [ "$CLEANALL_MODE" = true ]; then
         if ! cleanall; then
             exit 1
