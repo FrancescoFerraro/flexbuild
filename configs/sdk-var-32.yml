@@ -85,7 +85,7 @@ repo:
 
   uboot:
     url:  https://github.com/varigit/uboot-imx.git
-    commit: 3a11efa3a025abb581e0af8c072437a9a5f1e4c3
+    commit: 8722d35c3012c98f2f97c19ecce7b7a4bfa4df44
 
   rcw:
     url:  https://github.com/nxp-qoriq/rcw.git
@@ -166,7 +166,7 @@ repo:
 # kernel and modules git repositories
   linux:
     url:  https://github.com/varigit/linux-imx.git
-    commit: 70c709597d6aee78a9fe194579fc79d25bdac73f
+    commit: fe3a35cdc16e7dfd63ff19d5b8dbc5cd32485494
 
   cryptodev_linux:
     url:  https://github.com/cryptodev-linux/cryptodev-linux.git
@@ -418,11 +418,11 @@ repo:
 
   meta_variscite_bsp_common:
     url: https://github.com/varigit/meta-variscite-bsp-common.git
-    commit: 3444cb784cc7f769dfc8cdbf236878c571298bfa
+    commit: 8e602d089aa56ff1ce7607bd8fe6dbf039c583d0
 
   meta_variscite_bsp_imx:
     url: https://github.com/varigit/meta-variscite-bsp-imx.git
-    commit: bd739cd6e5d3459fc5d5565e3fbe5834aa5416bb
+    commit: 471cffa73679cde2be2520aec9445da70987afb5
 
   wlconf:
     url: https://git.ti.com/git/wilink8-wlan/18xx-ti-utils.git
@@ -443,7 +443,7 @@ repo:
 
   meta_variscite_sdk_common:
     url: https://github.com/varigit/meta-variscite-sdk-common.git
-    commit: 4d5d532cb9e8f7fa3f677d2d0e4b256a277ed5b2
+    commit: c099acece182a3e275745ea22797eb375b307798
 
 # generic component repositories
   imx_test:
