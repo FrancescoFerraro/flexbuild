@@ -18,9 +18,11 @@
 #   unexpected runtime issues.
 
 SCFW_SUPPORT ?= true
+UTILS_SCFW_TOOLCHAIN ?= true
 
 scfw_toolchain:
 	@[ $(SCFW_SUPPORT) = false ] && exit || \
+	@[ $(UTILS_SCFW_TOOLCHAIN) = false ] && exit || \
 	$(call fbprint_b,"scfw_toolchain") && \
 	set -x && \
 	if [ ! -d $(PKGDIR)/apps/utils/scfw_toolchain ]; then \
