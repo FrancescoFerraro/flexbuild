@@ -20,15 +20,26 @@ BUILD_YOCTO_RFS: n
 BUILD_BUILDROOT_RFS: n
 
 # enable/disable custom packagegroups
-PKG_GROUPS_GRAPHICS: n
-PKG_GROUPS_MULTIMEDIA: n
-PKG_GROUPS_NETWORKING: n
+#PKG_GROUPS_GRAPHICS: n
+#PKG_GROUPS_MULTIMEDIA: n
+#PKG_GROUPS_NETWORKING: n
+#PKG_GROUPS_CONNECTIVITY: y
+#PKG_GROUPS_UTILS: y
+#PKG_GROUPS_SECURITY: n
+#PKG_GROUPS_ML: n
+#PKG_GROUPS_GOPOINT: n
+#PKG_GROUPS_ROBOTICS: n
+
+PKG_GROUPS_GRAPHICS: y
+PKG_GROUPS_MULTIMEDIA: y
+PKG_GROUPS_NETWORKING: y
 PKG_GROUPS_CONNECTIVITY: y
 PKG_GROUPS_UTILS: y
-PKG_GROUPS_SECURITY: n
-PKG_GROUPS_ML: n
+PKG_GROUPS_SECURITY: y
+PKG_GROUPS_ML: y
 PKG_GROUPS_GOPOINT: n
 PKG_GROUPS_ROBOTICS: n
+
 
 # default IMX if '-p' option is not specified, change to LS for Layerscape SoC
 DEFAULT_SOC_FAMILY: IMX
@@ -382,9 +393,6 @@ repo:
   alsa_lib:
     url:  https://github.com/alsa-project/alsa-lib.git
     tag:  v1.2.11
-
-  sof_zephyr_tar:
-    url:  https://www.nxp.com/lgfiles/NMG/MAD/YOCTO/sof-zephyr-2.10.0.tar.gz
 
   imx_codec_bin:
     url:  https://www.nxp.com/lgfiles/NMG/MAD/YOCTO/imx-codec-4.9.0.bin
