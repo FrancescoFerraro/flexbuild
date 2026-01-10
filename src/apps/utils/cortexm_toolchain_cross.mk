@@ -19,7 +19,7 @@
 CM_GCC ?= "12.3.rel1"
 
 CORTEXM_TOOLCHAIN_SUPPORT ?= true
-UTILS_CORTEXM_TOOLCHAIN_CROSS ?= "true"
+UTILS_CORTEXM_TOOLCHAIN_CROSS ?= true
 
 cortexm_toolchain_cross:
 	@[ $(CORTEXM_TOOLCHAIN_SUPPORT) = false ] && exit || \
